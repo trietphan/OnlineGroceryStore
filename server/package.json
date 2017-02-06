@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node --harmony-async-await ./src/index.js",
+    "dev": "nodemon -w ./ -x npm run start",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "db-create": "node --harmony-async-await ./src/db/bin/createDb.js",
+    "db-drop": "node --harmony-async-await ./src/db/bin/dropDb.js"
+  },
+  "devDependencies": {
+    "babel-jest": "^17.0.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chalk": "^1.1.3",
+    "jest-cli": "^17.0.3",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "oracledb": "^1.11.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

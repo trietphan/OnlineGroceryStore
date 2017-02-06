@@ -1,0 +1,7 @@
+school =
+ (DESCRIPTION =
+   (ADDRESS = (PROTOCOL = tcp)(HOST = fourier.cs.iit.edu)(PORT = 1521))
+   (CONNECT_DATA =
+     (SID = orcl)
+   )
+ )
